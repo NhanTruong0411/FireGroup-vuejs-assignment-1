@@ -1,0 +1,100 @@
+.button {
+   padding: 11px 10px;
+   border: 1px solid #E5E8EF;
+   border-radius: 4px;
+   background-color: #ffffff;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 17px;
+   color: #828282;
+   transition: box-shadow .3s;
+   cursor: pointer;
+}
+
+.button:hover {
+   box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.button-confirm {
+   border: 1px solid #5B86E5;
+   background-color: $button-color;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 16px;
+   color: #ffffff;
+   transition: box-shadow .3s;
+}
+
+.button-confirm:hover {
+   box-shadow: 0 0 11px rgba(91, 134, 229, 1);
+}
+
+.button-cancel {
+   padding: 8px 26px;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 16px;
+   color: $heading-color;
+}
+
+
+
+.switch {
+   position: relative;
+   display: inline-block;
+   width: 36px;
+   height: 20px;
+}
+
+.switch input {
+   opacity: 0;
+   width: 0;
+   height: 0;
+}
+
+.slider {
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #ccc;
+   -webkit-transition: .4s;
+   transition: .4s;
+}
+
+.slider:before {
+   position: absolute;
+   content: "";
+   height: 14px;
+   width: 14px;
+   left: 3px;
+   bottom: 3px;
+   background-color: white;
+   -webkit-transition: .4s;
+   transition: .4s;
+}
+
+input:checked+.slider {
+   background-color: #2196F3;
+}
+
+input:focus+.slider {
+   box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+   -webkit-transform: translateX(16px);
+   -ms-transform: translateX(16px);
+   transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+   border-radius: 34px;
+}
+
+.slider.round:before {
+   border-radius: 50%;
+}
