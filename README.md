@@ -1,1 +1,1 @@
-link demo : https://nhantruong0411.github.io/FireGroup-vuejs-assignment1/
+link demo : https://nhantruong0411.github.io/FireGroup-vuejs-assignment-1/
